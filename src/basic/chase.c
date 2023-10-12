@@ -581,6 +581,7 @@ int chase(const char *path, const char *root, ChaseFlags flags, char **ret_path,
                  * end. While we won't resolve the root path we still simplify it. */
                 root = path_simplify(root_abs);
 
+                printf(root);
                 assert(path_is_absolute(root));
                 assert(!empty_or_root(root));
 
